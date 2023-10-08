@@ -1,0 +1,87 @@
+.topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 20px 30px 0px;
+    margin-left: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title p > a {
+    text-decoration: none;
+    color: #fbbd12;
+}
+.long-line {
+    background-color: #62646b;
+    width: 1345px;
+    height: 1.8px;
+    margin-top: 2px;
+    margin-left: 22px;
+}
+
+.title > p {
+    margin: 0px;
+    color: #ffffff;
+}
+
+.movie-card {
+    border: 1px;
+    width: 170px;
+    height: 250px; /* Set the height for the movie card */
+    margin: 10px;
+    padding: 0; /* Remove padding to allow image to cover the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflow content */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transitions */
+}
+
+.movie-card:hover {
+    transform: translateY(-10px); /* Move the card up slightly on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the card with the image */
+    transition: filter 0.3s ease-in-out; /* Add a transition for image filter */
+}
+
+.movie-card:hover img {
+    filter: brightness(70%); /* Darken the image on hover */
+}
+
+.movie-info {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+
+.movie-card:hover .movie-info {
+    display: block; /* Show the movie info on hover */
+    opacity: 1; /* Fade in the movie info */
+}
+
+.span,
+.name-of-the {
+    font-family: Arial, Helvetica, sans-serif;
+}

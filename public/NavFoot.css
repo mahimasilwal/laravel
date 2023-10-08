@@ -1,0 +1,159 @@
+* {
+    font-family: Calibri;
+}
+body {
+    margin: 0;
+    line-height: normal;
+    width: 100%;
+    background-color: #3c3e43;
+}
+/* @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+} */
+
+header {
+    background-color: #2d2e32;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.logo {
+    margin-right: 30px;
+}
+.search {
+    margin-right: 200px;
+}
+header .search {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    /* border: 02px solid #ffffff; */
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 5px;
+    border: none;
+    width: 265px;
+    border-radius: 30px;
+    outline: none;
+}
+.search i {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.navbar {
+    margin-right: 40px;
+    display: flex;
+    font-size: 16px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 40px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    color: #fbbd12;
+    background-color: #3c3e43;
+}
+
+.login button {
+    color: #fbbd12;
+    background-color: #2d2e32;
+    border: 2px solid #fbbd12;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 30px;
+    font-size: 16px;
+}
+.login button:hover {
+    color: #2d2e32;
+    background-color: #fbbd12;
+}
+
+.signup button {
+    color: #fbbd12;
+    background-color: #2d2e32;
+    border: 2px solid #fbbd12;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.signup button:hover {
+    color: #2d2e32;
+    background-color: #fbbd12;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #2d2e32;
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Calibri light, sans-serif;
+}
+.copyright,
+.privacy-policy {
+    font-family: Calibri light, sans-serif;
+    margin-bottom: 20px;
+}
+
+.copyright a,
+.privacy-policy a {
+    color: #fbbd12;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fbbd12;
+}

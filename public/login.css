@@ -1,0 +1,130 @@
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Styles for the login form */
+.login-form {
+    background-color: #3c3e43;
+    margin: 100px;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.login-form img {
+    margin-bottom: 10px;
+}
+
+.login-bg {
+    width: fit-content;
+    background-color: #2d2e32;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.user-login-txt h2 {
+    color: #fbbd12;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.login-bg form {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.input-group input {
+    border: #62646b;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 18px;
+    width: 300px;
+    font-weight: lighter;
+    outline: none;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-btn input {
+    color: #fbbd12;
+    background-color: #2d2e32;
+    border: 2px solid #fbbd12;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn input:hover {
+    color: #2d2e32;
+    background-color: #fbbd12;
+    border: 2px solid #2d2e32;
+}
+
+.login-bg a {
+    text-decoration: none;
+    color: #fbbd12;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.signup-link {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px;
+    color: #fbbd12;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.close-button:hover {
+    color: #c90000;
+}

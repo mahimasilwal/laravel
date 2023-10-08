@@ -1,0 +1,268 @@
+* {
+    font-family: Calibri;
+}
+body {
+    margin: 0;
+    line-height: normal;
+    width: 100%;
+    background-color: #3c3e43;
+}
+
+.index {
+    width: 100%;
+    /* margin-top: 5px; */
+}
+.index-bg {
+    left: 1px;
+    background-color: var(--color-darkslategray-300);
+    width: 100%;
+    height: auto;
+    mix-blend-mode: normal;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 65vh;
+}
+.slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+.box {
+    background-color: rgba(0, 0, 0, 0.92);
+    width: 300px;
+    height: 250px;
+    /* margin: 0px 30px; */
+    position: relative;
+    bottom: 26rem;
+    left: 50rem;
+    color: white;
+    text-align: center;
+    width: 500px;
+    font-size: 25px;
+}
+
+.box-line {
+    background-color: #fbbd12;
+    width: 5px;
+    height: 250px;
+    float: right;
+}
+
+.getstarted-txt {
+    margin-top: 30px;
+    border: 2px solid #fbbd12;
+    color: #fbbd12;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.getstarted-txt:hover {
+    color: #2d2e32;
+    background-color: #fbbd12;
+}
+
+.a-social-network {
+    font-size: 16px;
+    position: relative;
+    top: 18px;
+    margin: 5px;
+    font-family: caladea;
+}
+
+.rate-and-share {
+    /* margin-top: 5px; */
+    font-size: 27px;
+    position: relative;
+    top: 18px;
+    margin: 5px;
+    font-family: caladea;
+}
+
+@media screen and (max-width: 768px) {
+    .text-box {
+        font-size: 14px;
+    }
+}
+
+.featured-this-week {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top-rated-on {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 20px 30px 0px;
+    margin-left: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title > a {
+    text-decoration: none;
+    color: #fbbd12;
+}
+.long-line {
+    background-color: #62646b;
+    width: 1330px;
+    height: 1.8px;
+    margin-top: 2px;
+    margin-left: 22px;
+}
+
+.title > p {
+    margin: 0px;
+    color: #fbbd12;
+}
+
+.movie-card {
+    border: 1px;
+    width: 170px;
+    height: 250px; /* Set the height for the movie card */
+    margin: 10px;
+    padding: 0; /* Remove padding to allow image to cover the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflow content */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transitions */
+}
+
+.movie-card:hover {
+    transform: translateY(-10px); /* Move the card up slightly on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the card with the image */
+    transition: filter 0.3s ease-in-out; /* Add a transition for image filter */
+}
+
+.movie-card:hover img {
+    filter: brightness(70%); /* Darken the image on hover */
+}
+
+.movie-info {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+
+.movie-card:hover .movie-info {
+    display: block; /* Show the movie info on hover */
+    opacity: 1; /* Fade in the movie info */
+}
+
+.span,
+.name-of-the {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .movie-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+.section-next {
+    height: 450px;
+    background-color: #2d2e32;
+    display: flex;
+}
+
+.video {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.watch-here {
+    color: #fbbd12;
+    margin-top: 20px;
+}
+
+.watch-here p {
+    margin-top: 10px;
+}
+.movie-trailer {
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.video-reviewers {
+    background-color: #3c3e43;
+    float: right;
+    width: 310px;
+    height: fit-content;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+.pop-reviewers {
+    color: #fbbd12;
+    border-bottom: 2px solid #62646b;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.video-reviewers p {
+    margin: 0px;
+    padding: 5px;
+}
+
+.reviewer1 {
+    border: #62646b 2px solid;
+    background-color: #2d2e32;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.reviewer1 .username {
+    color: #fbbd12;
+    font-weight: lighter;
+}
+.reviewer1 .reviews {
+    color: #929292;
+}
+
+li {
+    list-style: none;
+}
